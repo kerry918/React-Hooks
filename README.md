@@ -68,3 +68,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### useRef
+
+- Storing a reference to a component (input field, div, etc)
+- Storing the number of time the component has rendered
+
+### useLayoutEffect
+
+- The signature is identical to useEffect, but it fires synchronously after all DOM mutations.
+- Use this to read layout from the DOM and synchronously re-render.
+- Updates scheduled inside useLayoutEffect will be flushed synchronously, before the browser has a change to paint.
