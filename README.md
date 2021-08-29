@@ -69,6 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+## React Hooks
 
 ### useRef
 
@@ -80,3 +81,26 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - The signature is identical to useEffect, but it fires synchronously after all DOM mutations.
 - Use this to read layout from the DOM and synchronously re-render.
 - Updates scheduled inside useLayoutEffect will be flushed synchronously, before the browser has a change to paint.
+
+### useCallback
+
+- Prevent a function being created on every single render
+- Frequently used when loop over an array of something
+- Used when using 'memo'
+
+### useMemo
+
+- Useful when optimize computed value
+
+### useReducer
+
+- Storing state, alternative of the useState hook
+- Have an initial state, and a function that is reducer, reducer is handling different actions throughout the application. Call dispatch to trigger the action.
+- Complex state (change multiple things in the state based on actions)
+- When get complex, there might be situation that one actions toggles different parts of the state
+- use-immer
+
+### useContext
+
+- Store the use in a context and share throughout the application
+- Store the user in a state at a top level and use useContext to pass it down
